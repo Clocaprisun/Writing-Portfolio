@@ -1,0 +1,92 @@
+/*AI Generated because the focus is the writing and not the look of the website(I created a mockup that this was based on)*/
+/* 1. The Main Box Container */
+#content {
+    max-height: 80vh;          /* Caps the container at 80% of the viewport height */
+    overflow-y: auto;          /* Adds a scrollbar to the main box if you have tons of posts */
+    border: 3px solid black;   /* The thick outer border from your wireframe */
+    background-color: #F9F7F1; /* A slightly different cream tone for the outer tray */
+    padding: 20px;
+}
+
+/* 2. Individual Discussion Boxes Inside the Main Box */
+#discussion1, #discussion2 {
+    border: 3px solid black;   /* Sharp inner card borders */
+    background-color: #FFF2CC; /* Your signature retro cream/yellow */
+    margin-bottom: 25px;       /* Pushes the cards apart */
+    border-radius: 4px;
+}
+
+/* 3. OPTIONAL: Inner Box Scrolling */
+#dismaincontent {
+    /* Option A: If you want individual papers to also scroll inside their cards: */
+    max-height: 250px;
+    overflow-y: auto; 
+    padding: 15px;
+    
+    /* Option B: If you want the whole paper to stretch out completely, 
+       forcing only the MAIN container to scroll, just delete max-height and overflow-y here! */
+}
+/* --- Header Layout --- */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: #FFF2CC; /* Matches prototype cream color */
+    padding: 10px 20px;
+    border: 3px solid black;
+    border-bottom: none; /* Merges neatly into the menu below */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+/* --- The Menu Bar Layout --- */
+#menu {
+    border: 3px solid black;
+    background-color: #FFF2CC;
+    margin-bottom: 0; /* REMOVED THE GAP: Forces the content tray to snap directly to the menu */
+}
+
+.menu-bar ul {
+    list-style-type: none; /* Removes the bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Forces items horizontal */
+}
+
+.menu-bar li {
+    border-right: 3px solid black; /* Tab dividers */
+}
+
+.menu-bar li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* --- Main Content Tray --- */
+#content {
+    border: 3px solid black;
+    border-top: none; /* REMOVED OVERLAP: Prevents a double-thick border where the boxes meet */
+    background-color: #FAF8F0; /* SLIGHT YELLOW: A very clean, soft retro off-white cream tone */
+    padding: 20px;
+    max-height: 75vh; /* Caps the main window height */
+    overflow-y: auto; /* Enables vertical scrolling for the main box container */
+}
+
+
+/* --- Individual Discussion Cards --- */
+#discussion {
+    border: 3px solid black;
+    background-color: #FFF2CC; /* Your signature yellow/cream card color */
+    margin-bottom: 20px;
+}
+
+#dismaincontent {
+    padding: 20px;
+    background-color: #FFFDF5; /* An even lighter, clean ivory for readable text background */
+}
